@@ -1,0 +1,69 @@
+<div>
+  <table align="center">
+      <caption class = "tabletitle"> </caption>
+      <tr *ngFor="let item of keys; let i=index">
+      <td contenteditable="true">{{item}}</td>
+      <td contenteditable="true">{{values[i]}}</td>
+      </tr>
+      
+
+    <!-- <tr>
+      <th>Firstname</th>
+      <th>Lastname</th>
+      <th>Nickname</th>
+      <th>Salary</th>
+      <th></th>
+      <th></th>
+    </tr>
+
+    <tr *ngFor="let tag of Customers.Employees.Employee; let i = index">
+      <td type = "text" id="{{'firstname'+i}}" contentEditable=true>
+        {{tag.firstname}}
+      </td>
+      <td type = "text" id="{{'lastname'+i}}" contentEditable=true>
+        {{tag.lastname}}
+      </td>
+      <td type = "text" id="{{'nickname'+i}}" contentEditable=true>
+        {{tag.nickname}}
+      </td>
+      <td type = "number" id="{{'salary'+i}}" contentEditable=true>
+        {{tag.salary}}
+      </td>
+      <td><button (click)="Save(tag)" class="btn btn-success">Save</button></td>
+      <td><button (click)="Delete(tag)" class="btn btn-success">Delete</button></td>
+    </tr>
+
+    <tr>
+      <td>
+        <input type="text" [(ngModel)]="newtag.firstname" required>
+      </td>
+      <td type = "text">
+       <input type="text" [(ngModel)]="newtag.lastname" required> 
+      </td>
+      <td type = "text">
+        <input type="text" [(ngModel)]="newtag.nickname" required>
+      </td>
+      <td type = "number">
+        <input type="number" [(ngModel)]="newtag.salary" required>
+      </td>
+      <td><button class="btn btn-success" (click)="Add()">Add</button></td>
+      <td></td>
+    </tr>
+  </table>
+<br><br>
+  <table class = "emp">
+      <caption class = "tabletitle"> Updated JSON</caption>
+        <tr>  
+            <th>Firstname</th>
+            <th>Lastname</th>  
+            <th>Nickname</th>        
+            <th>Salary</th>          
+        </tr>        
+        <tr *ngFor="let tag of Customers.Employees.Employee; let i = index">  
+            <td>{{tag.firstname}}</td>
+            <td>{{tag.lastname}}</td>
+            <td>{{tag.nickname}}</td>        
+            <td>{{tag.salary}}</td>
+        </tr>
+     --></table>
+</div>
